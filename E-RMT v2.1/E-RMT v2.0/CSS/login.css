@@ -1,0 +1,142 @@
+/* login */
+@font-face {
+      font-family: 'CustomFont';
+      src: url('../Assets/font.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+}
+
+:root {
+      --primary-color:    #b6120f;  
+      --background-color: #fffdfa;  
+      --accent-color:     #ffd424;  
+      --button-color:     #1d2e6f;  
+      --text-color:       #141537;
+}
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family:"Segoe UI", sans-serif;
+    }
+
+    body {
+      background: url("../Assets/background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: var(--background-color);
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .login-header h2 {
+      font-family: 'CustomFont', sans-serif;
+      color: var(--primary-color);
+      margin-bottom: 0.3rem;
+    }
+
+    .login-header p {
+      color: var(--text-color);
+      font-size: 0.8rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.4rem;
+      color: var(--text-color);
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      background-color: var(--background-color);
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 0.7rem;
+      background-color: var(--button-color);
+      color: var(--background-color);
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-button:hover {
+      background-color: #445bb8;
+    }
+
+    .language-switch {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .language-switch a {
+      color: var(--primary-color);
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .language-switch a:hover {
+      text-decoration: underline;
+    }
+
+    .logo {
+      width: 90px; 
+      height: auto;
+    }
+
+    .forgot-password {
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .forgot-password a {
+      color: var(--primary-color);
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .forgot-password a:hover {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
+
+    .page-footer {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      margin: 0;
+      padding: 0;
+      font-size: 0.8rem;
+      color: var(--background-color);
+      z-index: 1000;
+      text-align: left;
+    }

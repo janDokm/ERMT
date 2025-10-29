@@ -1,0 +1,114 @@
+/* view_students */
+.table-container {
+  max-width: 95%;
+  margin: 40px auto;
+  background-color: var(--accent-color);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.table-container h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  color: var(--text-color);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--secondary-color);
+}
+
+tr:hover {
+  background-color: var(--button-color);
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+}
+
+td:first-child, th:first-child {
+  border-left: none;
+}
+
+td:last-child, th:last-child {
+  border-right: none;
+}
+
+/* Filter part - styling */
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.filter-form input[type="text"],
+.filter-form select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  outline: none;
+  transition: 0.2s ease;
+  min-width: 120px;
+}
+
+.filter-form input[type="text"]:focus,
+.filter-form select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-form button {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter-form button:hover {
+  background-color: var(--primary-color);
+}
+
+.filter-form a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.95rem;
+  align-self: center;
+}
+
+.filter-form a:hover {
+  text-decoration: underline;
+}

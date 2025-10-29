@@ -1,0 +1,72 @@
+/* Report Generation (UC009) */
+    :root {
+      --primary-color: #2b6777;
+      --secondary-color: #c8d8e4;
+      --accent-color: #f2f2f2;
+      --button-color: #52ab98;
+      --text-color: #333;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background-color: var(--accent-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 700px;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--text-color);
+    }
+
+    select,
+    input[type="date"] {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .btn {
+      margin-top: 1.5rem;
+      padding: 0.75rem 2rem;
+      background-color: var(--button-color);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #428f83;
+    }

@@ -1,0 +1,140 @@
+/* Dashboard */
+    :root {
+      --primary-color: #2b6777;
+      --secondary-color: #c8d8e4;
+      --accent-color: #f2f2f2;
+      --button-color: #52ab98;
+      --text-color: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background-color: var(--accent-color);
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: var(--primary-color);
+      padding: 1rem;
+      color: white;
+    }
+
+    .sidebar h2 {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin: 1rem 0;
+    }
+
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      display: block;
+      padding: 0.5rem;
+      border-radius: 6px;
+    }
+
+    .sidebar ul li a:hover {
+      background-color: #3a8a9c;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 2rem;
+      background-color: white;
+    }
+
+    .main-content h1 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: var(--secondary-color);
+      padding: 1.2rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      background-color: #a6c0d1;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+    }
+
+    .chart-stack {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 2rem auto;
+    }
+
+    .pie-chart {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .pie-chart.blended {
+      background: conic-gradient(#e9c203, #445bb8, #930d03, #e9c203);
+      z-index: 1;
+    }
+
+    .pie-chart.sharp {
+      background: conic-gradient(
+        #e9c203 0deg 210deg,
+        #445bb8 210deg 300deg,
+        #930d03 300deg 360deg
+      );
+      opacity: 0.5;
+      z-index: 2;
+    }
+
+
+    .meal-chart-section h1 {
+      color: var(--primary-color);
+      font-family: 'CustomFont', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .meal-chart-section {
+        padding: 2rem;
+        background-color: white;
+        border-top: 1px solid #eee;
+        text-align: center;
+    }
+
+    .meal-chart-section p {
+      color: var(--primary-color);
+      font-size: 0.9rem;
+    }
+
+    

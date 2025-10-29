@@ -1,0 +1,171 @@
+/* Dashboard */
+@font-face {
+      font-family: 'CustomFont';
+      src: url('../Assets/font1.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+}
+
+:root {
+      --primary-color:    #920c0a;  
+      --background-color: #fffdfa;  
+      --accent-color:     #ffd424;  
+      --button-color:     #1d2e6f;  
+      --text-color:       #141537;
+}
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background-color: var(--background-color);
+      display: flex;
+      min-height: 100vh;
+      flex-direction: row; 
+    }
+
+
+    .sidebar {
+      width: 220px;
+      background-color: #adcfff;
+      padding: 1rem;
+      color: var(--primary-color);
+    }
+
+    .sidebar h2 {
+      font-family: 'CustomFont', sans-serif;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+      margin-left: 0.4rem;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin: 1rem 0;
+    }
+
+    .sidebar ul li a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 1rem;
+      display: block;
+      padding: 0.5rem;
+      border-radius: 6px;
+    }
+
+    .sidebar ul li a:hover {
+      background-color: #445bb8;
+    }
+
+    .logo {
+      width: 90px; 
+      height: auto;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 2rem;
+      background-color: white;
+    }
+
+    .main-content h1 {
+      color: var(--primary-color);
+      font-family: 'CustomFont', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: var(--button-color);
+      color: var(--background-color);
+      padding: 1.2rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      background-color: #445bb8;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--background-color);
+      font-family: 'CustomFont', sans-serif;
+    }
+
+    .page-footer {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      margin: 0;
+      padding: 0;
+      font-size: 0.8rem;
+      color: var(--background-color);
+      z-index: 1000;
+      text-align: left;
+    }
+    
+    .chart-stack {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 2rem auto;
+    }
+
+    .pie-chart {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Background: smooth blended look */
+    .pie-chart.blended {
+      background: conic-gradient(#e9c203, #445bb8, #930d03, #e9c203);
+      z-index: 1;
+    }
+
+    /* Overlay: sharp hard slices with transparency */
+    .pie-chart.sharp {
+      background: conic-gradient(
+        #e9c203 0deg 210deg,
+        #445bb8 210deg 300deg,
+        #930d03 300deg 360deg
+      );
+      opacity: 0.5;
+      z-index: 2;
+    }
+
+
+    .meal-chart-section h1 {
+      color: var(--primary-color);
+      font-family: 'CustomFont', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .meal-chart-section {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .meal-chart-section p {
+      color: var(--primary-color);
+      font-size: 0.9rem;
+    }
+
+

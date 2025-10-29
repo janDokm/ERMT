@@ -1,0 +1,42 @@
+<!-- e-RMT System - Report Generation (English Version) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate Reports</title>
+  <link rel="stylesheet" href="../CSS/UC009.css">
+</head>
+<body>
+  <header>
+    <h1>Generate Reports</h1>
+  </header>
+  <main>
+    <div class="form-container">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="reportType">Select Report Type</label>
+          <select id="reportType" name="reportType">
+            <option value="attendance">Attendance Report</option>
+            <option value="borangC6">Borang C6 Summary</option>
+            <option value="invoice">Invoice Report</option>
+            <option value="lateRequests">Late Attendance Requests</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="dateFrom">From Date</label>
+          <input type="date" id="dateFrom" name="dateFrom">
+        </div>
+
+        <div class="form-group">
+          <label for="dateTo">To Date</label>
+          <input type="date" id="dateTo" name="dateTo">
+        </div>
+
+        <button type="submit" class="btn">Download Report</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

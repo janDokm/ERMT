@@ -1,0 +1,65 @@
+<!-- e-RMT System - Borang C6 Generation (English Version) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borang C6 Generator</title>
+  <link rel="stylesheet" href="../CSS/UC002.css">
+</head>
+<body>
+  <header>
+    <h1>Borang C6 Generator</h1>
+  </header>
+  <main>
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <label for="month">Select Month</label>
+          <select id="month" name="month">
+            <option value="jan">January</option>
+            <option value="feb">February</option>
+            <option value="mar">March</option>
+            <option value="apr">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="aug">August</option>
+            <option value="sep">September</option>
+            <option value="oct">October</option>
+            <option value="nov">November</option>
+            <option value="dec">December</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Date of Submission</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Total Students</th>
+              <th>Meals Ordered</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2025-06-01</td>
+              <td>105</td>
+              <td>105</td>
+            </tr>
+            <tr>
+              <td>2025-06-02</td>
+              <td>102</td>
+              <td>102</td>
+            </tr>
+            <!-- Repeat rows dynamically -->
+          </tbody>
+        </table>
+        <button type="submit" class="generate-btn">Generate Borang C6</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

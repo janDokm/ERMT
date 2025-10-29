@@ -1,0 +1,42 @@
+<!-- e-RMT System - Invoice Submission (English Version) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Submission</title>
+  <link rel="stylesheet" href="../CSS/UC003.css">
+</head>
+<body>
+  <header>
+    <h1>Submit Invoice</h1>
+  </header>
+  <main>
+    <div class="form-container">
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="canteenName">Canteen Operator Name</label>
+          <input type="text" id="canteenName" name="canteenName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="month">Month Covered</label>
+          <input type="text" id="month" name="month" placeholder="e.g. June 2025" required>
+        </div>
+
+        <div class="form-group">
+          <label for="submissionDate">Invoice Date</label>
+          <input type="date" id="submissionDate" name="submissionDate" required>
+        </div>
+
+        <div class="form-group">
+          <label for="invoiceFile">Upload Invoice (PDF or Image)</label>
+          <input type="file" id="invoiceFile" name="invoiceFile" accept=".pdf, .jpg, .png" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Invoice</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

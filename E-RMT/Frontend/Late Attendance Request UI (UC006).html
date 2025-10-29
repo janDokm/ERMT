@@ -1,0 +1,51 @@
+<!-- e-RMT System - Late Attendance Request (English Version) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Late Attendance Request</title>
+  <link rel="stylesheet" href="../CSS/UC006.css">
+</head>
+<body>
+  <header>
+    <h1>Late Attendance Request</h1>
+  </header>
+  <main>
+    <div class="form-container">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="studentName">Student Name</label>
+          <input type="text" id="studentName" name="studentName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="class">Class</label>
+          <input type="text" id="class" name="class" required>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date of Late Arrival</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Reason for Lateness</label>
+          <textarea id="reason" name="reason" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="teacher">Submitting To</label>
+          <select id="teacher" name="teacher">
+            <option value="teacher1">Teacher Ahmad</option>
+            <option value="teacher2">Teacher Nurul</option>
+            <option value="teacher3">Teacher John</option>
+          </select>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Request</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

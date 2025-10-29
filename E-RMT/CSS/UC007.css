@@ -1,0 +1,71 @@
+/* Live Attendance Monitor (UC007) */
+    :root {
+      --primary-color: #2b6777;
+      --secondary-color: #c8d8e4;
+      --accent-color: #f2f2f2;
+      --present: #4CAF50;
+      --absent: #E74C3C;
+      --late: #f39c12;
+      --text-color: #333;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background-color: var(--accent-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .monitor-container {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.75rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: var(--secondary-color);
+    }
+
+    .status-present {
+      color: var(--present);
+      font-weight: bold;
+    }
+
+    .status-absent {
+      color: var(--absent);
+      font-weight: bold;
+    }
+
+    .status-late {
+      color: var(--late);
+      font-weight: bold;
+    }
+  

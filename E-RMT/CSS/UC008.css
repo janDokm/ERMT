@@ -1,0 +1,82 @@
+/* Discrepancy Handling (UC008) */
+    :root {
+      --primary-color: #2b6777;
+      --secondary-color: #c8d8e4;
+      --accent-color: #f2f2f2;
+      --button-color: #52ab98;
+      --text-color: #333;
+      --warning-color: #f39c12;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background-color: var(--accent-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .discrepancy-box {
+      border-left: 4px solid var(--warning-color);
+      background-color: #fff8e1;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .discrepancy-box strong {
+      color: var(--warning-color);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 120px;
+      padding: 0.6rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .btn {
+      padding: 0.75rem 2rem;
+      background-color: var(--button-color);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #428f83;
+    }
